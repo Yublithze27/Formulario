@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <H1>FORMULARIO</H1>
+    </header>
+    <form action="continuar.html" method="POST">
+        <fieldset>
+            <legend>Selecione seus animais favoritos</legend>
+            <p>
+                <label>Gato
+                    <input type="checkbox" name="animais" value="gato">
+                </label>
+                <label>Cahorro
+                    <input type="checkbox" name="animais" value="Cahorro">
+                </label>
+                <label>Vaca
+                    <input type="checkbox" name="animais" value="Vaca">
+                </label>
+                <label>Águia
+                    <input type="checkbox" name="animais" value="Águia">
+                </label>
+                <label>Macaco
+                    <input type="checkbox" name="animais" value="Macaco">
+                </label>
+            </p>
+            <p>
+                <label>Tubarão
+                    <input type="checkbox" name="animais" value="Tubarão">
+                </label>
+                <label>Elefante
+                    <input type="checkbox" name="animais" value="Elefante">
+                </label>
+                <label>Cabra
+                    <input type="checkbox" name="animais" value="Cabra">
+                </label>
+                <label>Cobra
+                    <input type="checkbox" name="animais" value="Cobra">
+                </label>
+                <label>Golfinho
+                    <input type="checkbox" name="animais" value="Golfinho">
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <label for="cidades">Cidade onde mora:</label>
+            <select name="morar" id="cidades">
+                <option value="">--Selecione uma cidade--</option>
+                <option value="001">São Paulo</option>
+                <option value="002">Rio de Janeiro Federal</option>
+                <option value="003">Distrito Federal</option>
+                <option value="004">Bahia Bahia</option>
+                <option value="005">Ceará</option>
+                <option value="006">Minas Gerais</option>
+                <option value="007">Amazonas</option>
+                <option value="008">Paraná</option>
+                <option value="009">Pernambuco</option>
+                <option value="010">Goiás</option>
+                <option value="011">Pará Pará</option>
+                <option value="012">Rio Grande do Sul</option>
+                <option value="013">Maranhão</option>
+                <option value="014">Alagoas</option>
+                <option value="015">Mato Grosso do Sul</option>
+                <option value="016">Rio Grande do Norte</option>
+                <option value="017">Piauí</option>
+                <option value="018">Paraíba</option>
+                <option value="019">Roraima</option>
+                <option value="020">Espírito Santo</option>
+            </select>
+        </p>
+        <p>
+            <label>Vc tem filhos?  Sim
+                <input type="radio" name="filhos" value="sim" required>
+            </label>
+            <label>Não
+                <input type="radio" name="filhos" value="nao">
+            </label>
+        </p>
+        <p>
+            <label for="email">Seu e-mail:</label>
+                <input type="email" id="email" size="30" required>
+        </p>
+        <p>
+            <label>Quantos anos você tem?
+                <input type="number" name="idade" min="0" max="130" required>
+            </label>
+        </p>
+        <p>
+            <label for="username">Nome de Usuario:
+                <input type="text" id="username" name="username" required>
+            </label>
+        </p>
+        
+        <p>
+            <label for="pass">Password (mínimo de 8 caracteres):
+                <input type="password" id="pass" name="password" minlength="8" required>
+            </label>
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
